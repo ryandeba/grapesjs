@@ -177,6 +177,7 @@ module.exports = config => {
             var comp = comps[ci];
             if(comp.type != 'text' &&
               comp.type != 'textnode' &&
+              comp.type != 'link' &&
               c.textTags.indexOf(comp.tagName) < 0 ){
               allTxt = 0;
               break;
